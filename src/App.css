@@ -1,0 +1,113 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Use a modern font */
+  background-color: #e9ecef;
+  /* Softer background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  /* Subtle gradient */
+  padding: 30px 40px;
+  border-radius: 12px;
+  /* More rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  /* Softer shadow .. */
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.App:hover {
+  transform: translateY(-5px);
+  /* Slight hover effect */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  /* Enhanced shadow on hover */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+form div {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* Rounded input fields */
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  /* Enhanced focus effect */
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  /* Gradient button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  /* Rounded button */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #0056b3, #004494);
+  /* Darker gradient on hover */
+  transform: translateY(-3px);
+  /* Slight hover effect */
+}
+
+button:active {
+  background: #003366;
+  /* Darker color on click */
+  transform: translateY(0);
+  /* Reset hover effect */
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
